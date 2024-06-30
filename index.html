@@ -1,13 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="/src/app.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="browser friendly score counter for Lorcana and Magic the Gathering" />
     <title>Score counter</title>
   </head>
   <body>
-    <div id="root">Content goes here</div>
-    <script type="module" src="/src/main.tsx"></script>
+    <div id="root">
+      <div class="scoreItem" id=add1>+</div>
+      <div class="scoreItem upsideDown" id="score1">...</div>
+      <div class="scoreItem" id="sub1">-</div>
+      
+      <div class="scoreItem resetItem" id="reset0">Set 0</div>
+      <div class="scoreItem resetItem"></div>
+      <div class="scoreItem resetItem" id="reset20">Set 20</div>
+      
+      <div class="scoreItem" id="sub2">-</div>
+      <div class="scoreItem" id="score2">...</div>
+      <div class="scoreItem" id="add2">+</div>
+    </div>
   </body>
+  <script type="module" src="/src/main.ts"></script>
 </html>
