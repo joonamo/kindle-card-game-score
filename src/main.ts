@@ -4,11 +4,10 @@ let score2 = 0;
 const score1Container = document.getElementById("score1")
 const score1Add = document.getElementById("add1")
 const score1Sub = document.getElementById("sub1")
-score1Container!.innerHTML = "0"
+
 const score2Container = document.getElementById("score2")
 const score2Add = document.getElementById("add2")
 const score2Sub = document.getElementById("sub2")
-score2Container!.innerHTML = "0"
 
 const reset0Button = document.getElementById("reset0")
 const reset20Button = document.getElementById("reset20")
@@ -54,3 +53,5 @@ const reset20 = () => {
   score2Container!.innerHTML = score2.toString()
 }
 reset20Button!.onclick = reset20
+
+reset0()
